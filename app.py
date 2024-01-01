@@ -14,7 +14,7 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 from sklearn.model_selection import train_test_split
 
 # Download NLTK stopwords resource
-
+nltk.download('stopwords')
 
 # Load stopwords
 english_stops = set(stopwords.words('english'))
