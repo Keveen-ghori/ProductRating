@@ -3,8 +3,6 @@ import streamlit as st
 import pandas as pd
 import re
 import numpy as np
-import nltk
-from nltk.corpus import stopwords
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import load_model
@@ -13,8 +11,6 @@ from tensorflow.keras.layers import Embedding, LSTM, Dense
 from tensorflow.keras.callbacks import ModelCheckpoint
 from sklearn.model_selection import train_test_split
 
-# Download NLTK stopwords resource
-nltk.download('stopwords')
 
 # Load stopwords
 english_stops = set(stopwords.words('english'))
