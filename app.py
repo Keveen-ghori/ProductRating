@@ -13,6 +13,7 @@ from sklearn.model_selection import train_test_split
 
 
 # Load stopwords
+nltk.download('stopwords')
 english_stops = set(stopwords.words('english'))
 
 def load_dataset():
